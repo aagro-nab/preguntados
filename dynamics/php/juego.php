@@ -32,7 +32,7 @@
                     <p> Materias obtenidas: </p>
                 </div>
 
-                <button> Pregunta </button>
+                <button id='generaPregunta'> Pregunta </button>
             ";
 
         }
