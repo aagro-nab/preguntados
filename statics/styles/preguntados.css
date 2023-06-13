@@ -1,0 +1,68 @@
+/*-------------------------FUENTES-------------------------*/
+@font-face {
+    font-family: "Ourland";
+    src: url(../fonts/Ourland.ttf);
+}
+
+@font-face {
+    font-family: "Cocogoose";
+    src: url(../fonts/Cocogoose\ Pro-trial.ttf);
+}
+
+/*-------------------------ELEMENTOS-------------------------*/
+
+body{
+    background-color: rgb(243, 215, 250);
+    font-family: "Cocogoose";
+    color: rgb(109, 62, 145);
+}
+
+/*-------------------------SECCIONES-------------------------*/
+
+.titulo{
+    color: rgb(91, 29, 138);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "Ourland";
+    font-size: 90px;   
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub{
+    font-size: 30px;
+}
+
+.divRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30rem;
+    margin-bottom: 30px;
+}
+
+.divJugadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30rem;
+    margin-bottom: 30px;
+}
+
+.jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+}
+
+.name{
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+}
