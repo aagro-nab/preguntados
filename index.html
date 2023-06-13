@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./statics/styles/preguntados.css">
 </head>
 <body>
-    <h1>Bienvenido a Pregunta2 2!</h1>
-    <p>Inserta el nombre de los jugadores</p>
-    <form method="post" action="./dynamics/php/juego.php">
-        <input type="text" name="j1" id="j1" required>
-        <input type="text" name="j2" id="j2" required>
-        <br><button type="submit" id="inicio">Iniciar juego</button>
-    </form>
+    <header class="titulo">Bienvenido a Pregunta2 2!</header>
+    <section class="cuerpo">
+        <p class="sub">Inserta el nombre de los jugadores</p>
+        <form method="post" action="./dynamics/php/juego.php">
+            <div class="cuerpo">
+                <div class="divRow"><input type="text" name="j1" id="j1" required>
+                <input type="text" name="j2" id="j2" required></div>
+                <button type="submit" id="inicio">Iniciar juego</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../statics/styles/preguntados.css">
 </head>
 <body>
     <?php
@@ -12,27 +13,29 @@
 
         if(!$j1 || !$j2){
             if(!$j1){
-                echo "Jugador 1: No has introducido tu nombre <br>";
+                echo "Jugador 1 : No has introducido tu nombre <br>";
             }
             if(!$j2){
-                echo "Jugador 2: No has introducido tu nombre<br>";
+                echo "Jugador 2 : No has introducido tu nombre<br>";
             }
         }
         else{
             echo "
-                <h1> A jugar! </h1>
-                <p> Turno de: </p>
-                <div>
-                    <p> $j1 </p>
-                    <p> Materias obtenidas: </p>
-                </div>
-                    
-                <div>
-                    <p> $j2 </p>
-                    <p> Materias obtenidas: </p>
-                </div>
-
-                <button id='generaPregunta'> Pregunta </button>
+                <header class='titulo'> A jugar! </header>
+                <section class='cuerpo'>
+                    <p> Turno de: </p>
+                    <div class='divJugadores'>
+                        <div class='jugador'>
+                            <p class='name'> <b>$j1 </b></p>
+                            <p> Materias obtenidas: </p>
+                        </div>
+                        <div class='jugador'>
+                            <p class='name'><b> $j2 </b></p>
+                            <p> Materias obtenidas: </p>
+                        </div>  
+                    </div>
+                    <button id='generaPregunta'> Pregunta </button>
+                </section>
             ";
 
         }
